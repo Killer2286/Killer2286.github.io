@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Gentium+Book+Basic:wght@400;700&display=swap');
+
+
+body {
+            background-color: rgb(194, 209, 209);
+        }
+        #main {
+          background: url(https://i.ibb.co/Phh8J7N/hip-square.png) repeat 0 0;
+            text-align: center;
+            margin: 6vh 6%;
+            padding: 6vh 6%;
+            border-radius: 5px;
+            font-family: 'Gentium Book Basic', serif;
+        }        
+        h1 {
+            color: #2b300f;
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 5em;
+            font-weight: 400;
+        }
+        h2 {
+            color: #6e5a00;
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        #img-div, #tribute-info {
+            margin: 5vh auto;
+        }        
+        #img-caption {
+            margin: 2vh;
+            font-size: 1.8em;
+            color: #6e5a00;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+            margin: 0 auto;
+        }
+        ul {
+            max-width: 900px;
+            font-size: 1.4em;
+            text-align: left;
+            line-height: 140%;
+            list-style-type: none;
+            margin: auto;
+            margin-top: 80px;
+        }
+        li {
+            margin-top: 15px;
+            color: #382e00;
+        }
+        strong {
+            color: rgb(146, 46, 46);
+            font-size: 1.1em;
+        }
+        p, a {
+            margin-top: 80px;
+            font-size: 1.6em;
+            color: #6e5a00;
+        }        
+        .unfinished-portrait {
+            margin-top: 80px;
+        }       
+        .mySlides {
+          display: none;
+        }
+        /* Slideshow container */
+    .slideshow-container {
+      max-width: 425px;
+      position: relative;
+      margin: auto;
+    }
+    img {
+      max-width: 425px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through     */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }  
+      
+  </style>
+</head>
+<body>
+  <div id="main">
+    <header>
+        <h1 id="title">Моё портфолио</h1>
+        <h2>Это я такой красивый ^^</h2>
+        
+    </header>
+    <main>
+        <div id="img-div">
+            <figure>
+                <img src="https://i.ibb.co/646rRyw/bf617153-8599-41a2-91a4-5a333f3c78ac.jpg" alt="Roosevelt's signature" class="signature">
+                <figcaption id="img-caption">Евгений Андерсон</figcaption>
+            </figure>
+        </div>
+        <div id="tribute-info">
+          <h2>А это мои грамоты</h2>
+          <div class="slideshow-container">
+          
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/8mwsb4B/01.png" alt="01" border="0"></a>
+              <div class="text">Diploma one</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/qR5T921/02.png" alt="02" border="0"></a>
+              <div class="text">Diploma two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/zJGSypd/03.png" alt="03" border="0"></a>
+              <div class="text">Diploma three</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/6r0smcc/04.png" alt="04" border="0"></a>
+              <div class="text">Diploma four</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/yBHYFFz/05.png" alt="05" border="0"></a>
+              <div class="text">Diploma five</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/S5Ms8V9/06.png" alt="06" border="0"></a>
+              <div class="text">Diplome six</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/BwJ2kdv/07.png" alt="07" border="0"></a>
+              <div class="text">Diploma seven</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">8 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/HYRhTTs/08.png" alt="08" border="0"></a>
+              <div class="text">Diploma eight</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">9 / 9</div>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/5shPtHv/09.png" alt="09" border="0"></a>
+              <div class="text">Diploma nine</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+          </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              <span class="dot" onclick="currentSlide(7)"></span> 
+              <span class="dot" onclick="currentSlide(8)"></span> 
+              <span class="dot" onclick="currentSlide(9)"></span> 
+            </div>
+            <h2>Это видео в котором я выступал в качестве актёра</h2>
+            <h2>И одна из грамот именно за него</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/atCeePbHFls" frameborder="0" allowfullscreen></iframe>
+  
+        </div>
+        
+    </main>
+</div>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+</body>
+</html>
